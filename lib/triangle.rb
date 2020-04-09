@@ -8,5 +8,6 @@ class Triangle
   end
   def kind
     if @a == @b && @a==c
-      return 
+      return :equilateral
+    
 end
