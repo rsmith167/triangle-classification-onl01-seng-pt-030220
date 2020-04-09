@@ -11,7 +11,7 @@ class Triangle
       return :equilateral
     elsif (@a==@b && @a != @c) || (@b==@c && @b != @a) || (@a==@c && @a != @b)
     return :isosceles
-  else
+  elsif (@a != @b) && (@b != @c) && (@a != @c)
     return :scalene
   end
 end
