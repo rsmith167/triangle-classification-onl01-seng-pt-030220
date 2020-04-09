@@ -11,8 +11,8 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
-      puts error.message
-end
+      return error.message
+    end
 elsif @a == @b && @a==@c
       return :equilateral
     elsif (@a==@b && @a != @c) || (@b==@c && @b != @a) || (@a==@c && @a != @b)
