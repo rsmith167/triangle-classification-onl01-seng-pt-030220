@@ -23,7 +23,7 @@ end
 end
 class TriangleError < StandardError
   def message
-    puts "You're not smarter than a fifth grader"
+     "You're not smarter than a fifth grader."
   end
 end
 end
