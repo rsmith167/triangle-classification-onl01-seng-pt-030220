@@ -11,15 +11,14 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
-      return error.message
+      puts error.message
       end
-elsif @a == @b && @a==@c
+    elsif @a == @b && @a==@c
       return :equilateral
     elsif (@a==@b && @a != @c) || (@b==@c && @b != @a) || (@a==@c && @a != @b)
     return :isosceles
   elsif (@a != @b) && (@b != @c) && (@a != @c)
     return :scalene
-  
   end
 end
 class TriangleError < StandardError
